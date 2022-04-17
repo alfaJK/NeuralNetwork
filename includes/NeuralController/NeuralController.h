@@ -12,4 +12,6 @@ class NeuralControl{
         NeuralControl(NeuralSetting* Neur_Set, ModuleSetting* ModCollection);
         NeuralControl(std::string NS_Path , std::string Mod_Path);
         ~NeuralControl();
+        void Learn();
+        void StartWork();
 };

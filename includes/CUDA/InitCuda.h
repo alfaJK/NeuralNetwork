@@ -3,6 +3,12 @@
 #include "Matix.h"
 #include "Image.h"
 
+#ifdef __DLL__
+   #define DECLSPEC    __declspec(dllexport)
+#else
+   #define DECLSPEC    __declspec(dllimport)
+#endif 
+
 #define BLOCK_SIZE 32
-#define HD __host__ __device__
-#define GL __global__
+
+
