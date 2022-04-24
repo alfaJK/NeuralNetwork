@@ -6,8 +6,8 @@ class ConvModule : public Module{
         std::default_random_engine Generator;
         std::normal_distribution<double> Distribution;
     public:
-        Matrix();
-        ~Matrix();
+        ConvModule();
+        ~ConvModule();
         Matrix DirectDist(Matrix* InputData) override;
         Matrix BackDist(Matrix* InputData , Matrix Deltas) override;
         Matrix GetData() override;

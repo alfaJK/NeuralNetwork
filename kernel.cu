@@ -305,7 +305,7 @@ __host__ int main()
     */
 
     cudaEventRecord(start);
-      NotOptAdditionMatrix <<<gridSize, blockSize >>> (InputMatrix, Filter, OutputMatrix);
+    NotOptAdditionMatrix <<<gridSize, blockSize >>> (InputMatrix, Filter, OutputMatrix);
     //AdditionMatrix << <gridSize, blockSize >>> (InputMatrix, Filter, OutputMatrix);
     cudaEventRecord(stop);
     cudaDeviceSynchronize(); cudaGetLastError();
